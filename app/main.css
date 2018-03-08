@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*
+/  A Base rule is used for defaults like html, body, a, a:hover. This includes
+/  your CSS resets and would often be in its own base CSS file or at the start of your main CSS.
+*/
+body {
+  color: #3f505f; }
+
+img {
+  max-width: 100%; }
+
+/* ==========================================================================
+   #Fonts
+   ========================================================================== */
+/* ==========================================================================
+   #Typograpy
+   ========================================================================== */
+h1,
+h2,
+h3
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: "lato", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-weight: 700; }
+
+h1, .like-h1 {
+  font-size: calc(48px - 28px); }
+  @media (min-width: 576px) {
+    h1, .like-h1 {
+      font-size: 48px;
+      letter-spacing: 1px; } }
+
+h2, .like-h2 {
+  font-size: calc(48px - 28px); }
+  @media (min-width: 576px) {
+    h2, .like-h2 {
+      font-size: calc(48px - 16px);
+      letter-spacing: 1px; } }
+
+h3, .like-h3 {
+  font-size: calc(48px - 34px); }
+  @media (min-width: 576px) {
+    h3, .like-h3 {
+      font-size: calc(48px - 24px);
+      letter-spacing: 1px; } }
+
+h4, .like-h4 {
+  font-size: calc(48px - 33px); }
+  @media (min-width: 576px) {
+    h4, .like-h4 {
+      font-size: calc(48px - 30px);
+      letter-spacing: 1px; } }
+
+h5, .like-h5 {
+  font-size: calc(48px - 33px); }
+  @media (min-width: 576px) {
+    h5, .like-h5 {
+      font-size: calc(48px - 38px);
+      letter-spacing: 1px; } }
+
+h6, .like-h6 {
+  font-size: calc(48px - 33px); }
+  @media (min-width: 576px) {
+    h6, .like-h6 {
+      font-size: calc(48px - 41px);
+      letter-spacing: 1px; } }
+
+.btn {
+  display: inline-block;
+  background: #86b04a;
+  padding: .5em 2em;
+  color: #fff;
+  border-radius: 0;
+  transition: all .4s ease-in-out; }
+  .btn:hover {
+    color: #fff;
+    background: #5d7a33; }
+
+.btn-main:after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.clear {
+  clear: both; }
+
+/*
+/  Module is a reusable, modular element in the design. The SMACSS documentation 
+/  sees modules as the majority of your elements and thus doesn’t require that you 
+/  prefix them but you could do so if you choose.
+*/
+/* ==========================================================================
+   #Header
+   ========================================================================== */

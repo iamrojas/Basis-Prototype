@@ -1,0 +1,137 @@
+
+/*
+/  A Base rule is used for defaults like html, body, a, a:hover. This includes
+/  your CSS resets and would often be in its own base CSS file or at the start of your main CSS.
+*/
+
+body{
+  color:$brand-primary;
+}
+
+img{
+  max-width:100%;
+}
+
+/* ==========================================================================
+   #Fonts
+   ========================================================================== */
+
+  $icon-font-path: '../fonts/';
+
+  // /* Include Custom Fonts */
+
+  // @font-face {
+	 //  font-family: 'maven_pro_light300';
+	 //  src: url($icon-font-path +  'mavenprolight-300-webfont.woff2') format('woff2'),
+		//    url($icon-font-path +  'mavenprolight-300-webfont.woff') format('woff');
+	 //  font-weight: normal;
+	 //  font-style: normal;
+  // }
+
+  %boldtext{
+  	font-family:$font-special;
+  	text-transform:uppercase;
+  	font-weight:900;
+  	margin:0 auto;
+  }
+
+
+/* ==========================================================================
+   #Typograpy
+   ========================================================================== */
+
+h1,
+h2,
+h3
+h4,
+h5,
+h6{
+  margin-top:0;
+  font-family:$font-family-sans-serif;
+  text-transform:uppercase;
+  margin-bottom:1em;
+  font-weight:700;
+}
+
+
+// //Variable Header
+$headerSize:48px;
+
+h1,.like-h1{ 
+  font-size: calc(#{$headerSize} - 28px);
+  @media(min-width:$screen-sm){
+	font-size: $headerSize;
+	letter-spacing: 1px;
+  }
+}
+
+h2,.like-h2 {
+  font-size: calc(#{$headerSize} - 28px);
+  @media(min-width:$screen-sm){
+	font-size: calc(#{$headerSize} - 16px);
+	letter-spacing: 1px;
+  } 
+}
+
+h3,.like-h3 {
+  font-size: calc(#{$headerSize} - 34px);
+  @media(min-width:$screen-sm){
+	font-size: calc(#{$headerSize} - 24px);
+	letter-spacing: 1px;
+  }
+   
+}
+
+h4,.like-h4 {
+  font-size: calc(#{$headerSize} - 33px);
+  @media(min-width:$screen-sm){
+	font-size: calc(#{$headerSize} - 30px);
+	letter-spacing: 1px;
+  }
+	
+}
+
+h5,.like-h5 {
+  font-size: calc(#{$headerSize} - 33px);
+  @media(min-width:$screen-sm){
+	font-size: calc(#{$headerSize} - 38px);
+	letter-spacing: 1px;
+  }
+	
+}
+
+h6,.like-h6 {
+  font-size: calc(#{$headerSize} - 33px);
+  @media(min-width:$screen-sm){
+	font-size: calc(#{$headerSize} - 41px);
+	letter-spacing: 1px;
+  }
+	
+}
+
+.btn{
+  display:inline-block;
+  background: $color3;
+  padding:.5em 2em;
+  color:#fff;
+  border-radius:0;
+  transition:all .4s ease-in-out;
+
+  &:hover{
+	color:#fff;
+	background:darken($color3, 15%);
+  }
+}
+
+.btn-main:after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.clear{
+  clear:both;
+}
